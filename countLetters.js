@@ -16,8 +16,6 @@ const countLetters = function(sentence) {
       countObject[letter] += 1;
     }
   }
-
-  console.log(countObject);
   return countObject;
 };
 
