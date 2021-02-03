@@ -12,7 +12,6 @@ const eqArrays = function(arrayOne, arrayTwo) {
   } return true;
 };
 
-
 //eq objects
 const eqObjects = function(object1, object2) {
   if (Object.keys(object1).length !== Object.keys(object2).length) {
@@ -46,7 +45,6 @@ const assertObjectsEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Objects are not === equal: ${inspect(actual)} !== ${inspect(expected)}`);
   }
 };
-
 
 //tests
 const ab = { a: "1", b: "2" };
