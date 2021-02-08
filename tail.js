@@ -8,8 +8,7 @@ const assertEqual = function(actual, expected) {
 };
 
 const tail = function(array) {
-  let arrayCopy = [...array];
-  return arrayCopy.slice(1);
+  return array.slice(1);
 };
 
 

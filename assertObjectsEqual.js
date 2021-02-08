@@ -2,7 +2,6 @@
 //eqArrays
 const eqArrays = function(arrayOne, arrayTwo) {
   if (arrayOne.length !== arrayTwo.length) {
-    // console.log("arrays are different length");
     return false;
   }
   for (let i = 0; i < arrayOne.length; i++) {

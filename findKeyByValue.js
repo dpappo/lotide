@@ -9,6 +9,7 @@ const assertEqual = function(actual, expected) {
 
 const findKeyByValue = function(object, value) {
   for (let item in object) {
+    // eslint-disable-next-line eqeqeq
     if (object[item] == value) {
       return item;
     }
