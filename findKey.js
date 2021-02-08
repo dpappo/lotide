@@ -1,5 +1,5 @@
 //assert.equal
-const assertEqual = function(actual, expected) {
+const assertEqual = function (actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const findKey = function(object, callback) {
+const findKey = function (object, callback) {
   for (let item in object) {
     if (callback(object[item])) {
       return item;
@@ -15,34 +15,50 @@ const findKey = function(object, callback) {
   }
 };
 
+module.exports = findKey;
 
+// //tests
+// assertEqual(
+//   findKey(
+//     {
+//       "Blue Hill": { stars: 1 },
+//       Akaleri: { stars: 3 },
+//       noma: { stars: 2 },
+//       elBulli: { stars: 3 },
+//       Ora: { stars: 2 },
+//       Akelarre: { stars: 3 },
+//     },
+//     (x) => x.stars === 2
+//   ),
+//   "noma"
+// ); // => "noma"
 
-//tests
-assertEqual(findKey({
-  "Blue Hill": { stars: 1 },
-  "Akaleri":   { stars: 3 },
-  "noma":      { stars: 2 },
-  "elBulli":   { stars: 3 },
-  "Ora":       { stars: 2 },
-  "Akelarre":  { stars: 3 }
-}, x => x.stars === 2), "noma"); // => "noma"
+// assertEqual(
+//   findKey(
+//     {
+//       APPL: { value: 69 },
+//       PHR: { value: 135 },
+//       VCIT: { value: 96 },
+//       NET: { value: 84 },
+//       SQ: { value: 229 },
+//       TWLO: { value: 389 },
+//     },
+//     (x) => x.value > 100
+//   ),
+//   "PHR"
+// );
 
-
-
-assertEqual(findKey({
-  "APPL": { value: 69 },
-  "PHR":   { value: 135 },
-  "VCIT":      { value: 96 },
-  "NET":   { value: 84 },
-  "SQ":       { value: 229 },
-  "TWLO":  { value: 389 }
-}, x => x.value > 100), "PHR");
-
-assertEqual(findKey({
-  "APPL": { value: 69 },
-  "PHR":   { value: 135 },
-  "VCIT":      { value: 96 },
-  "NET":   { value: 84 },
-  "SQ":       { value: 229 },
-  "TWLO":  { value: 389 }
-}, x => x.value > 400), undefined);
+// assertEqual(
+//   findKey(
+//     {
+//       APPL: { value: 69 },
+//       PHR: { value: 135 },
+//       VCIT: { value: 96 },
+//       NET: { value: 84 },
+//       SQ: { value: 229 },
+//       TWLO: { value: 389 },
+//     },
+//     (x) => x.value > 400
+//   ),
+//   undefined
+// );

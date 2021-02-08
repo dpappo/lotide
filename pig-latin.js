@@ -14,4 +14,6 @@ for (let i = 0; i < slicedArgs.length; i++) {
   pigLatin += removedFirst + firstLetter + "ay ";
 }
 
-console.log(pigLatin);
+module.exports = pigLatin;
+
+// console.log(pigLatin);

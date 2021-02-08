@@ -1,12 +1,13 @@
-const eqArrays = function(arrayOne, arrayTwo) {
+const eqArrays = function (arrayOne, arrayTwo) {
   for (let i = 0; i < arrayOne.length; i++) {
     if (arrayOne[i] !== arrayTwo[i]) {
       return false;
     }
-  } return true;
+  }
+  return true;
 };
 
-const assertArraysEqual = function(arrayOne, arrayTwo) {
+const assertArraysEqual = function (arrayOne, arrayTwo) {
   if (eqArrays(arrayOne, arrayTwo)) {
     console.log(`✅✅✅ Arrays are === equal: ${arrayOne} === ${arrayTwo}`);
   } else {
@@ -14,7 +15,7 @@ const assertArraysEqual = function(arrayOne, arrayTwo) {
   }
 };
 
-const letterPositions = function(sentence) {
+const letterPositions = function (sentence) {
   let results = {};
   for (let i = 0; i < sentence.length; i++) {
     if (results[sentence[i]] === undefined) {
@@ -26,9 +27,10 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+module.exports = letterPositions;
 // letterPositions("hello");
 
-assertArraysEqual(letterPositions("hello")["h"], [0]);
-assertArraysEqual(letterPositions("hello")["e"], [1]);
-assertArraysEqual(letterPositions("hello")["l"], [2, 3]);
-assertArraysEqual(letterPositions("hello")["o"], [4]);
+// assertArraysEqual(letterPositions("hello")["h"], [0]);
+// assertArraysEqual(letterPositions("hello")["e"], [1]);
+// assertArraysEqual(letterPositions("hello")["l"], [2, 3]);
+// assertArraysEqual(letterPositions("hello")["o"], [4]);
