@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "dpappolotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "for learning purposes, a self-made copy of the lodash library",
   "main": "main.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/dpappo/lotide.git"
   },
-  "author": "",
+  "author": {"name": "Dan Pappo", "url": "https://github.com/dpappo"},
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dpappo/lotide/issues"
